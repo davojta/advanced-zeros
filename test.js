@@ -462,6 +462,16 @@ describe('Zeros', () => {
     const zerosCount = getZerosCount(98852437, 10);
     assert.equal(zerosCount, 24713104);
   });
+  
+  it('custom', () => {
+    const zerosCount = getZerosCount(100, 10);
+    assert.equal(zerosCount, 24);
+  });
+
+  it('custom_base_2', () => {
+    const zerosCount = getZerosCount(4, 2);
+    assert.equal(zerosCount, 3);
+  });
 
   it('93', () => {
     const zerosCount = getZerosCount(85295508, 49);
